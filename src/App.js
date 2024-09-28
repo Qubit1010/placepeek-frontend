@@ -16,6 +16,7 @@ import { AuthContext } from "./shared/context/auth-context";
 import { useAuth } from "./shared/hooks/auth-hook";
 import LoadingSpinner from "./shared/components/UIElements/LoadingSpinner";
 
+
 // code splitting for optimzation
 const Users = React.lazy(() => import("./user/pages/Users"));
 const NewPlace = React.lazy(() => import("./places/pages/NewPlace"));
