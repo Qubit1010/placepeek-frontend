@@ -9,6 +9,7 @@ import "./PlaceItem.css";
 import { useHttpClient } from "../../shared/hooks/http-hook";
 import ErrorModal from "../../shared/components/UIElements/ErrorModal";
 import LoadingSpinner from "../../shared/components/UIElements/LoadingSpinner";
+import Location from "../../shared/images/location.png"
 
 const PlaceItem = (props) => {
   const auth = useContext(AuthContext);
@@ -84,7 +85,8 @@ const PlaceItem = (props) => {
         <Card className="place-item__content">
           <div className="place-item__image">
             <img
-              src={`${process.env.REACT_APP_ASSET_URL}/${props.image}`}
+              // src={`${process.env.REACT_APP_ASSET_URL}/${props.image}`}
+              src={Location}
               alt={props.title}
             />
           </div>
