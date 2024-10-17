@@ -86,7 +86,7 @@ const PlaceItem = (props) => {
           <div className="place-item__image">
             <img
               // src={`${process.env.REACT_APP_ASSET_URL}/${props.image}`}
-              src={Location}
+              src={props.image}
               alt={props.title}
             />
           </div>
